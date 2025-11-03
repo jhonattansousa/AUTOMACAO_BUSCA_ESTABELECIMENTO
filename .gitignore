@@ -18,7 +18,6 @@ __pycache__/
 .env.*
 
 # Dados de saída/temporários
-*.xlsx
 *.csv
 
 # Padrões para IDEs
@@ -31,6 +30,3 @@ Thumbs.db
 
 # Arquivos temporários
 ~$*
-
-# Dados de execução
-dados/*.xlsx
