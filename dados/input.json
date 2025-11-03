@@ -1,0 +1,17 @@
+[
+    {
+        "tipo_estabelecimento": "Academias",
+        "cidade": "Votorantim, SP",
+        "quantidade": 20
+    }, 
+    {
+        "tipo_estabelecimento": "Restaurantes",
+        "cidade": "Sorocaba, SP",
+        "quantidade": 20
+    },
+    {
+        "tipo_estabelecimento": "Sorveteria",
+        "cidade": "Votorantim, SP",
+        "quantidade": 20
+    }
+]

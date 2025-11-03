@@ -1,0 +1,36 @@
+# Ambiente virtual Python
+.venv/
+venv/
+ENV/
+env/
+
+# Bytecode Python e cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Arquivos de log
+*.log
+
+# Arquivos de configurações pessoais
+*.env
+.env.*
+
+# Dados de saída/temporários
+*.xlsx
+*.csv
+
+# Padrões para IDEs
+.vscode/
+.idea/
+
+# SO Mac/Linux/Windows
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+~$*
+
+# Dados de execução
+dados/*.xlsx
