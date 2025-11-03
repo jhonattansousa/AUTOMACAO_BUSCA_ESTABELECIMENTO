@@ -91,6 +91,12 @@ class ColetaDadosMaps:
             except:
                 pass
             
+            try:
+                painel = self.navegador.find_elements(By.XPATH, '//div[contains(@class, "m6QErb DxyBCb")]')
+                painel = painel[1] if len(painel) > 1 else painel[0]
+            except:
+                pass
+            
             logging.info("Busca realizada. Rolando resultados para encontrar os estabelecimentos...")
 
             # Percorre os resultados da barra lateral até obter a quantidade desejada
@@ -98,7 +104,8 @@ class ColetaDadosMaps:
             listCards = []
             
             while True:
-                self.navegador.find_element(By.TAG_NAME, 'body').send_keys(Keys.END)
+                # Simula a rolagem para baixo
+                self.navegador.execute_script("arguments[0].scrollBy(0, 10000);", painel)
                 time.sleep(2)
                 
                 cards = self.navegador.find_elements(By.XPATH, '//a[contains(@href, "https://www.google.com/maps/place")]')
